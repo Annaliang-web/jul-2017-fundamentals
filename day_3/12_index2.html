@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chocolate Chip Cookie</title>
+    <!-- the script tag opens the door for javascript -->
+    <script>
+      console.log("Hello");
+
+      let name = "Jacob";
+      let age = 38;
+
+      console.log(`My name is ${ name } and my age is ${ age }`);
+
+      // console - refers to the javascript console
+      // is a developer tool, audience is the DEVELOPER
+      // console.log();
+      // console.time(); // bench marking
+      // console.warn(); // send warnings to your fellow developers
+
+      // document - refers to the body of our page, or the canvas area of the browser that is display our end user. so the audience for document is THE END USER
+      document.write("This text is coming from JavaScript<br>");
+      // document.writeln();
+
+      // window - refers to brower as an application running in our OS
+      window.alert("This is a pop-up"); // also meant for your end user
+
+      // will store a boolean into the decision variable
+      let decision = window.confirm("Would you like to enter?");
+
+      // bang == not
+      // if (!decision) {
+      if (decision == false) {
+        // we change the site we are viewing to a different URL
+        window.location.href = "http://www.reddit.com";
+      }
+
+      // will store string into the name variable
+      let name2 = window.prompt("What is your name?");
+      document.write(`Welcome ${name2} to our site!<br>`);
+
+      // data structure rendering itself in the browser
+      let names = ["Jacob", "Steve", "Tam", "Jose", "Matt", "Jessie"];
+
+      for (let name of names) {
+        document.write(name + "<br>");
+      }
+    </script>
+  </head>
+  <body>
+    <h1 style="color: pink">Chocolate Chip Cookie</h1>
+  </body>
+</html>
+
+<script>
+  document.write("This is text at the bottom of the page.");
+</script>

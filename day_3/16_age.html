@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Age Checker</title>
+    <script>
+      let age = parseInt( prompt("What is your age?") );
+      // "18"
+      // window.prompt()
+      console.log(typeof age);
+
+      // 1 == "1" // true
+      // 1 === "1" // false
+
+      // continually ask the user for their age until a valid age is given
+      while (isNaN(age)) {
+        age = parseInt( prompt("What is your age?") );
+      }
+
+      // if (age >= 18) {}
+      document.write(`Your age is ${age}`);
+
+      // do {
+      //   age = parseInt( prompt("What is your age?") );
+      // } while(isNaN(age));
+
+
+      // if (typeof age == "number") {
+      // if (isNaN(age)) {
+      //   // prompt the user again
+      // } else {
+      //   document.write(`Your age is ${age}`);
+      // }
+    </script>
+  </head>
+  <body>
+    <h1 style="color:teal">Age Checker</h1>
+  </body>
+</html>
