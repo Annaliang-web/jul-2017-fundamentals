@@ -1,0 +1,84 @@
+/* this will apply these css property and values to all h1 tags */
+h1 {
+  color: purple;
+  background-color: gold;
+  font-family: cursive;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+/* class or id */
+/* one off, unique */
+#prettiest {
+  font-weight: bold;
+  border: 5px solid red;
+}
+/* class - meant to be resused */
+.pretty {
+  font-family: monospace;
+}
+
+li {
+  color: green;
+}
+
+/* any list item that is contained inside an unordered list, regardless if it is a direct descendant or not */
+ul li {
+  color: blue;
+}
+
+/* > must be a direct descendant */
+ul > li {
+ color: indigo;
+}
+
+a {
+  background-color: lightgrey;
+  color: brown;
+  font-family: sans-serif;
+  border-radius: 5px;
+  border: 2px solid black;
+  text-decoration: none;
+  padding: 5px;
+}
+
+/* psuedo selector */
+a:hover {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: darkgrey;
+}
+
+#home.active {}
+.active#home {}
+a#home.active {
+  background-color: maroon;
+}
+
+
+div > p {}
+div p {}
+.special p {}
+.special > p {}
+div.special p {}
+div.special > p {}
+
+#cool {
+  color: pink !important;
+}
+
+p {
+  color: silver;
+}
+
+.metal {
+  color: white;
+  background-color: black;
+}
+
+
+
+
+
+
+/**/
