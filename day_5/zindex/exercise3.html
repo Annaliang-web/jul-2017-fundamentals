@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Position planet</title>
+        <style>
+            #greeting {
+                background: rgb(255, 255, 0);
+                border: 2px solid black;
+                font-family: "Comic Sans MS", fantasy;
+                padding: 5px;
+                width: 262px;
+                position: relative;
+                bottom: 100px;
+                left: 105px;
+                z-index: 2;
+                /*top: -100px;*/
+            }
+            #planet {
+              position: relative;
+              right: 300px;
+              z-index: 1;
+            }
+            #mr-pink {
+              position: relative;
+              bottom: 400px;
+              left: 200px;
+              z-index: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="images/space.jpg">
+        <img id="planet" src="images/planet.png" width="300">
+
+        <div id="greeting">
+            <p>Hello! Welcome to position planet!</p>
+        </div>
+
+        <img id="mr-pink" src="images/mr-pink.png">
+    </body>
+</html>
+
+<!-- source: khan academy -->
