@@ -1,0 +1,60 @@
+/* css selector review */
+
+/* tag name */
+h1 {
+  color: pink;
+}
+
+p {
+  color: lightgrey;
+}
+
+/* id */
+#first {
+  background-color: teal;
+}
+
+/* classes*/
+.highlight {
+  background-color: gold;
+}
+
+/* * means everything, all */
+* {
+  border: thin red solid;
+}
+
+/* , means this, this, this ... .*/
+h1, p {
+  font-family: sans-serif;
+}
+
+/* select all the li's contained in the ul. ancestry */
+ul li {}
+
+/* >, direct descendants */
+ul > li {}
+
+/* pseudo classes */
+a:hover {}
+/* attribute selectors */
+a[href="http://www.google"]
+
+/*
+
+ul is the parent of the li
+li is hte child of the ul
+
+<ul>
+  <li>sugar</li>
+  <li>flour</li>
+  <li>chocolate chips</li>
+  <ol>
+    <li>cousins</li>
+  </ol>
+</ul>
+*/
+
+
+
+/**/
