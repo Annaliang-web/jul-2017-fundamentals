@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- Including jQuery from a CDN link instead of downloading the actual file -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+		<script>
+			$(document).ready(function() {
+				// Attaching the click event handler to elements with the 'submit' class
+				$('.submit').click(function(e) {
+					// preventDefault stops the page from refreshing when you click submit
+					// if it refreshes the li we appended will be gone
+					e.preventDefault();
+					// Append will add a new <li> element to the <ul> element
+					// It finds the <ul> by its class 'list'
+					$('.list').append(`<li>${$('.input').val()}</li>`);
+				})
+			});
+		</script>
+	</head>
+	<body>
+		<form action="">
+			<input type="text" class="input"></input>
+			<button type="submit" class="submit">Submit</button>
+		</form>
+		<ul class="list">
+		</ul>
+	</body>
+</html>
