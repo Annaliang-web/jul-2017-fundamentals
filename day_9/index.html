@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src='js/jquery-3.2.0.js'></script>
+    <script>
+      // 1. is the page ready
+      $(document).ready(function(){
+
+        // 2. listen to when the submit button is pressed
+        // $('#add').click(); // submit button being clicked
+        $('form').submit(function(event){
+
+          // 3.
+          event.preventDefault(); // prevents the default action of the webpage
+          // refreshing when the submit button is clicked
+
+          // 4. we want to add the text that is in the text field to the end of
+          // our ordered list
+          let newItem = $('#item').val(); // val() allows us to grab the text in the text field
+          // <input type="text" value="Jacob">
+
+          // 5.
+          // append(); allows us to add html to the end of a section
+          // $('body').prepend("Tam Kbeili");
+          // $('body').append("Jacob Tran");
+
+          // $('#list').append(`<li>${ newItem }</li>`);
+          $('#list').append('<li>' + newItem + '</li>');
+          // $('#list').prepend('<li>' + newItem + '</li>');
+
+          // 6. clear the text field
+          // $('h1').html(); // "Trump Wins"
+          // // <h1>Trump Wins</h1>
+          // $('h1').html('Hillary Wins');
+          // <h1>Hillary Wins</h1>
+
+          // $('#item').val(); // getter
+          // $('#item').val("Enter another to do item"); // setter
+          $('#item').val(""); // setter
+          $('#item').focus(); // bring the focus back to the text field after
+          // pressing submit
+
+
+
+        }); // form is being submitted
+        // $('.push');
+        // $('input[type=submit]');
+      });
+
+      // $(function(){}); // short form for ready
+    </script>
+  </head>
+  <body>
+    <h1>To Do List</h1>
+    <ol id="list">
+      <li>Drop the kids off at summer camp</li>
+      <li>Walk the dog</li>
+      <li>Finish curriculum development for robotics course</li>
+      <li>Watch the fight weigh-ins</li>
+      <li>Cook dinner</li>
+    </ol>
+
+    <h2>Add an item:</h2>
+    <form>
+      <input id="item" type="text">
+      <input id="add" class="push" type="submit">
+    </form>
+  </body>
+</html>

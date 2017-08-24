@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Page</title>
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBlktlwXQB3A-ZfK4ZVCkPT68_aYPdTa0k",
+        authDomain: "jacob-tran.firebaseapp.com",
+        databaseURL: "https://jacob-tran.firebaseio.com",
+        projectId: "jacob-tran",
+        storageBucket: "jacob-tran.appspot.com",
+        messagingSenderId: "651778183551"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <!-- load up our tool box -->
+    <!-- bootstrap version 3.3.7 from a CDN -->
+    <!-- Latest compiled and minified CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script src="js/jquery-3.2.0.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- compiled files from getbootstrap.com -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/boostrap.js"></script> -->
+
+    <script>
+      $(document).ready(function(){
+        $('li').click(function(){
+          // console.log("a navigation item was clicked");
+          // remove the active class on any other list items
+          $('li').removeClass("active");
+
+          // and add it to this list item
+          $(this).addClass("active");
+        });
+      });
+    </script>
+
+    <style>
+      #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+      #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+      #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+      #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+      #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+    </style>
+
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- the default font for bootstrap is a san-serif font -->
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Fundamentals Studios</a>
+        </div>
+        <ul class="nav navbar-nav pull-right">
+          <li class="active"><a href="#section1">Home</a></li>
+          <li><a href="#section2">About</a></li>
+          <li><a href="#section3">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- jumbotron -->
+    <div class="jumbotron text-center">
+      <h1>Fundamentals Studios</h1>
+      <p>We learn and we create.</p>
+    </div>
+    <div class="container">
+      <p>Visit us in Gastown, Vancouver.</p>
+      <p>The #3 top rated city in the world.</p>
+    </div>
+
+    <!-- grid system -->
+    <div class="container-fluid">
+      <h1>Programming Languages</h1>
+      <p>Resize the browser window to see the effect.</p>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="background-color:lavender;">
+          <span style="font-size: 100px; color: red;" class="glyphicon glyphicon-sunglasses"></span>
+          HTML
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="background-color:lavenderblush;">CSS</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="background-color:lavender;">JavaScript</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="background-color:lavenderblush;">Framworks</div>
+      </div>
+    </div>
+
+    <!-- scrollspy -->
+
+    <div id="section1" class="container-fluid">
+      <h1>Home</h1>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+    <div id="section2" class="container-fluid">
+      <h1>About</h1>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+    <div id="section3" class="container-fluid">
+      <h1>Portfolio</h1>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+    <div id="section41" class="container-fluid">
+      <h1>Section 4 Submenu 1</h1>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+    <div id="section42" class="container-fluid">
+      <h1>Section 4 Submenu 2</h1>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+
+
+  </body>
+</html>
